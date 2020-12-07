@@ -1,0 +1,814 @@
+/*===Fonts===*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/*===Default CSS===*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	color: #f8f8f8;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+}
+
+/*===Body CSS===*/
+body {
+	font-family: 'Marcellus', serif;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1.5em 0px 0px 2em;
+}
+
+.wrapper:before,
+.wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.heading h1 {
+	font-size: 3rem;
+	font-weight: 600;
+	color: #151948;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.heading p {
+	font-size: 1.5rem;
+	color: #5e629c;
+	text-align: center;
+	line-height: 3rem;
+}
+
+input,
+button,
+.about .col-4,
+.services .col-6,
+.blog .col-4 {
+	cursor: pointer;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.col-3 {
+	width: 25%;
+	float: left;
+}
+
+.col-4 {
+	width: 33%;
+	float: left;
+}
+
+.col-6 {
+	width: 50%;
+	float: left;
+}
+.goToTop-btn{
+	background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+	height: 3.5em;
+	width: 3.5em;
+	position: fixed;
+	right: 3em;
+	bottom: 3em;
+	border-radius: .4em;
+	text-align: center;
+	padding-top: .2em;
+	
+}
+.goToTop-btn .fas{
+	font-size: 3em;
+	transform: rotate(180deg);
+}
+.active-btn{
+	background: #7fc9fb;
+	color: #f8f8f8;
+	font-weight: bold;
+	border-radius: 2.67em;
+	width: 10em;
+	text-align: center;
+	transition: all ease .8s;
+	
+}
+.active-btn:hover{
+	background: linear-gradient(95deg, rgba(85, 51, 255, 1) 40%, rgba(37, 221, 245, 1) 100%);
+}
+/*===Hero Section CSS Start===*/
+.hero-section {
+	width: 100%;
+	background: linear-gradient(95deg, rgba(85, 51, 255, 1) 40%, rgba(37, 221, 245, 1) 100%);
+	clip-path: polygon(0% 0%, 100% 0, 100% 72%, 0 100%, 0 100%);
+}
+
+header {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 1.6em;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	height: 40px;
+	transform: scale(1.8);
+}
+
+.menu {
+	float: right;
+}
+
+.menu ul li {
+	display: inline-block;
+	padding: 0px .84em;
+	line-height: 3.35em;
+	border: 1px solid transparent;
+	transition: all ease .5s;
+}
+
+.menu ul li:last-child {
+	padding: 0 0 0 .5em;
+}
+
+.menu ul li:hover {
+	border: 1px solid white;
+	transition: .5s;
+}
+
+.menu a {
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.menu .active {
+	border: 1px solid white;
+}
+
+.main-body {
+	height: 500px;
+	width: 80%;
+	margin: 100px auto;
+}
+
+.main-body .col-6:first-child {
+	margin-top: 100px;
+}
+
+.main-body h1 {
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+
+.main-body p {
+	font-size: 1.5em;
+	line-height: 30px;
+}
+
+.main-body input {
+	text-transform: uppercase;
+	background-color: #3ECF8E;
+	padding: 1.5em 3.75em;
+	margin: 3.35em 1.67em 0 0;
+	font-weight: 600;
+	border: 1px solid transparent;
+	border-radius: .4em;
+	transition: all ease .2s;
+}
+
+.main-body input:hover,
+.main-body input:last-child:hover {
+	background-color: transparent;
+	border: 1px solid #3ECF8E;
+	transform: scale(1.2);
+	color: white;
+}
+
+.main-body input:last-child {
+	margin-left: 2.5em;
+	background-color: white;
+	color: #3ECF8E;
+}
+
+
+.main-body img {
+	height: auto;
+	max-width: 100%;
+}
+
+/*===Hero Section CSS End===*/
+
+/*===About Section CSS Start===*/
+.about {
+	padding-top: 12em;
+}
+
+.about .col-4 {
+	width: 31%;
+	padding: 5em 2.5em;
+	color: #505c67;
+	border: 1px solid #dadada;
+	margin-right: .9em;
+	transition: all ease .5s;
+	box-shadow: 1px 1px 3px transparent;
+	text-align: center;
+}
+
+.about .col-4:hover {
+	border: 1px solid #3ECF8E;
+	box-shadow: 1px 1px 3px #3ECF8E;
+}
+
+.about .col-4:last-child {
+	margin-right: 0px;
+}
+
+.about .col-4 .icon {
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+.about .fas {
+	color: #3ECF8E;
+	font-size: 4em;
+}
+
+.about h3 {
+	font-size: 1.8em;
+	font-weight: 600;
+	color: #151948;
+	margin-bottom: 1em;
+}
+
+.about p {
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 2em;
+	color: #5e629c;
+	line-height: 2rem;
+}
+
+/*===About Section CSS End===*/
+
+/*===Download Section CSS Start===*/
+.download {
+	padding-top: 12em;
+	text-align: left;
+}
+
+.download .col-6 {
+	width: 45%;
+}
+
+.download .col-6:last-child {
+	margin-left: 7em;
+}
+
+.download img {
+	height: auto;
+	max-width: 100%;
+}
+
+.download h1 {
+	font-size: 3em;
+	font-weight: 600;
+	color: #151948;
+	margin-bottom: 1em;
+}
+
+.download p {
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #5e629c;
+	line-height: 1.5em;
+}
+
+.download .col-6 input {
+	text-transform: uppercase;
+	background-color: #3ECF8E;
+	padding: 1.5em 3.75em;
+	margin: 3.35em 1.67em 0 0;
+	font-weight: 600;
+	border: 1px solid transparent;
+	border-radius: .4em;
+	transition: all ease .2s;
+}
+
+.download .col-6 input:hover {
+	background-color: #6032F8;
+	border: 1px solid white;
+	transform: scale(1.2);
+}
+
+/*===Download Section CSS End===*/
+
+/*===Services Section CSS Start===*/
+.services {
+	padding-top: 12em;
+}
+
+.services .heading p {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.services .content {
+	padding: 3em 0px;
+
+}
+
+.services .content .col-6 {
+	width: 48%;
+	padding: 1em;
+	margin: 1.5em 1.5em 0px 0px;
+	box-shadow: 1px 1px 5px #dadada;
+	transition: all ease .8s;
+}
+
+.services .content .col-6:hover {
+	box-shadow: 1px 1px 5px #3ECF8E;
+	border-radius: .4em;
+}
+
+.services .content .icon,
+.services .content .inner-content {
+	float: left;
+}
+
+.services .content .icon {
+	width: 20%;
+	text-align: center;
+	padding-right: 1.5em;
+}
+
+.services .content .icon .fas {
+	height: 8rem;
+	width: 8rem;
+	padding-top: 1em;
+	font-size: 3em;
+	border-radius: 50%;
+	border: 1px solid #3ECF8E;
+	color: #3ECF8E;
+	transition: all ease .8s;
+}
+
+.services .content .col-6:hover .fas {
+	color: white;
+	border: 1px solid transparent;
+	background-color: #3ECF8E;
+}
+
+.services .content .inner-content {
+	width: 80%;
+}
+
+.services .inner-content {
+	text-align: left;
+	padding-top: 1.25em;
+}
+
+.inner-content h4 {
+	font-size: 2em;
+	font-weight: 600;
+	color: #151948;
+
+
+}
+
+.inner-content p {
+	font-size: 1.2em;
+	color: #5e629c;
+	line-height: 2em;
+}
+
+/*===Services Section CSS End===*/
+
+/*===Showcase Section CSS Start===*/
+.showcase {
+	width: 100%;
+	margin-top: 12em;
+	padding-top: 4em;
+	background: linear-gradient(95deg, rgba(85, 51, 255, 1) 40%, rgba(37, 221, 245, 1) 100%);
+	position: relative;
+	margin-bottom: 20em;
+
+}
+
+.showcase h1 {
+	color: white;
+}
+
+.showcase p {
+	width: 50%;
+	margin: 0 auto;
+	color: white;
+}
+
+.showcase img {
+	height: 100%;
+	width: 18%;
+	padding-left: 10px;
+}
+
+.showcase .heading {
+	padding-bottom: 10em;
+}
+
+.showcase .content {
+	position: absolute;
+	top: 18em;
+	left: 5em;
+}
+
+/*===Showcase Section CSS End===*/
+
+/*===Pricing Section CSS Start===*/
+.pricing {
+	padding-top: 12em;
+}
+
+.pricing p {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.pricing .content {
+	padding-top: 2em;
+}
+
+.pricing .content .col-4 {
+	width: 32%;
+	padding: 4em;
+	border: 1px solid #dadada;
+	margin-left: .4em;
+	transition: all ease .8s;
+}
+
+.pricing .content .col-4:hover {
+	border: 1px solid #3ECF8E;
+}
+
+.pricing .content .col-4 h2,
+.pricing .content .col-4 h1,
+.pricing .content .col-4 p {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: .3em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pricing .content .col-4 h2 {
+	color: #151948;
+}
+
+.pricing .content .col-4 h1 {
+	font-size: 5em;
+	color: #3ECF8E;
+}
+
+.pricing .content .col-4 p {
+	color: #5e629c;
+	font-size: 1.2em;
+	line-height: 3em;
+}
+
+.pricing .content .col-4 input {
+	text-transform: uppercase;
+	background-color: #3ECF8E;
+	padding: 1.5em 3.75em;
+	margin: 3.35em 0px 0px 4.2em;
+	font-weight: 600;
+	border: 1px solid transparent;
+	border-radius: .4em;
+	transition: all ease .2s;
+}
+
+.pricing .content .col-4 input:hover {
+	background-color: transparent;
+	border: 1px solid #3ECF8E;
+	color: #151948;
+	transform: scale(1.2);
+}
+
+
+/*===Pricing Section CSS End===*/
+
+
+/*===Team Section CSS Start===*/
+.team {
+	padding-top: 12em;
+}
+
+.team .heading {
+	margin-bottom: 3em;
+}
+
+.team .col-3 {
+	position: relative;
+	border: 1px solid #3ECF8E;
+	width: 23%;
+	margin-left: .4em;
+}
+
+.team .social {
+	position: absolute;
+	top: 24em;
+	left: 6em;
+}
+
+.team p {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.team .mem-details img {
+	margin-bottom: 3em;
+}
+
+.team .mem-details h2,
+.team .mem-details h5,
+.team .social {
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.team .mem-details h2 {
+	color: #151948;
+}
+
+.team .mem-details h5 {
+	color: #5e629c;
+}
+
+.team .social .fab {
+	height: 3em;
+	width: 3em;
+	border-radius: 50%;
+	padding-top: 1em;
+	background: #151948;
+	border: 1px solid #dadada;
+	color: #3ECF8E;
+	transition: all ease .8s;
+	cursor: pointer;
+}
+
+.team .social .fab:hover {
+	border: 1px solid transparent;
+	transform: scale(1.2);
+	background-color: #3ECF8E;
+	color: #dadada;
+}
+
+/*===Team Section CSS End===*/
+
+/*===Blog Section CSS Start===*/
+.blog {
+	padding-top: 12em;
+}
+
+.blog .heading {
+	margin-bottom: 3em;
+}
+
+.blog .heading p {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.blog .col-4 {
+	width: 31%;
+	border: 1px solid #dadada;
+	margin-left: 1em;
+	padding: 1em;
+	transition: all ease .2s;
+}
+
+.blog .col-4:hover {
+	border: 1px solid #3ECF8E;
+	transform: scaleY(1.03);
+}
+
+.blog .col-4 img {
+	width: 100%;
+	height: auto;
+}
+
+.blog .col-4 h2,
+.blog .col-4 h4,
+.blog .col-4 p {
+	text-align: left;
+	margin-bottom: .7em;
+}
+
+.blog .col-4 h2 {
+	font-size: 2em;
+	line-height: 2em;
+	color: #151948;
+
+}
+
+.blog .col-4 p {
+	font-size: 1.5em;
+	line-height: 2.5em;
+	color: #5e629c;
+}
+
+.blog .col-4 h4 {
+	color: #3ECF8E;
+	font-size: 1.7em;
+}
+
+/*===Blog Section CSS End===*/
+
+/*===Contact Section CSS Start===*/
+.contact {
+	padding-top: 12em;
+	padding-bottom: 12em;
+}
+
+.contact .heading {
+	margin-bottom: 5em;
+}
+
+.contact .heading p {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.contact .content input {
+	width: 45%;
+	height: 4em;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 2px;
+	border: 1px solid #dadada;
+	color: black;
+}
+
+.contact .content input:hover,
+.contact .content textarea:hover {
+	border: 1px solid #3ECF8E;
+}
+
+.contact .content input:focus,
+.contact .content textarea:focus {
+	border: 1px solid #900c3f;
+}
+
+.contact .content textarea {
+	width: 95%;
+	height: 10em;
+	margin: 1rem;
+	border-radius: .4em;
+	border: 1px solid #dadada;
+	color: black;
+	padding: 1rem 0px 0px 2rem;
+}
+
+.contact .content input:last-child {
+	width: 25%;
+	text-transform: uppercase;
+	color: white;
+	background-color: #3ECF8E;
+	font-weight: 600;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	transition: all ease .2s;
+}
+
+.contact .content input:last-child:hover {
+	background-color: transparent;
+	border: 1px solid #3ECF8E;
+	color: black;
+	transform: scale(1.1);
+}
+
+.contact .content .col-6 img {
+	width: 100%;
+	height: 33em;
+}
+
+/*===Contact Section CSS End===*/
+
+/*===Footer Section CSS Start===*/
+.footer {
+	background-color: #190E28;
+	width: 100%;
+	padding-bottom: 5em;
+}
+
+.footer h2 {
+	font-size: 2em;
+	margin-bottom: 1.5em;
+}
+
+.footer p {
+	font-size: 1.5em;
+	cursor: pointer;
+	transition: all ease .8s;
+}
+
+.footer p:hover {
+	color: #3ECF8E;
+}
+
+.footer .content {
+	padding-top: 5em;
+}
+
+.footer .left,
+.footer .right,
+.footer .middle {
+	float: left;
+}
+
+.footer .left,
+.footer .right {
+	width: 25%;
+}
+
+.footer .content .left {
+	padding: 5em;
+}
+
+.footer .middle {
+	width: 50%;
+}
+
+.footer .middle .first,
+.footer .middle .second,
+.footer .middle .third {
+	width: 32%;
+	float: left;
+}
+
+.footer .right input,
+.footer .right button {
+	padding: 1em 2em;
+}
+
+.footer .right input {
+	margin-top: 2em;
+	background-color: #26153A;
+	border: 1px solid #3ECF8E;
+	border-radius: 2px;
+}
+
+.footer .right button {
+	margin-top: 2em;
+	background-color: #3ECF8E;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	transition: all ease .4s;
+
+}
+
+.footer .right button:hover {
+	background-color: transparent;
+	border: 1px solid #3ECF8E;
+	border-radius: 2px;
+	transform: scaleY(1.1);
+}
+
+.footer .Admin {
+	margin-top: 25em;
+	position: relative;
+}
+
+.Admin h3 {
+	font-size: 1.5em;
+	position: absolute;
+	left: 13em;
+}
+
+.Admin img {
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	position: absolute;
+	right: 40em;
+	top: -1em;
+}
+
+/*===Footer Section CSS End===*/
